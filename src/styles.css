@@ -1,0 +1,71 @@
+body {
+  background-color: #e5ceae;
+}
+
+.App {
+  display: grid;
+  place-items: center;
+}
+
+.map {
+  position: relative;
+  width: 1414px;
+  height: 810px;
+  background-color: black;
+  margin-top: 100px;
+}
+
+.map img {
+  position: relative;
+}
+
+.grid {
+  top: -1px;
+  position: absolute;
+  width: 1440px;
+  height: 810px;
+  background-color: transparent;
+  display: grid;
+}
+
+.item {
+  width: 38px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.item p {
+  font-size: 16px;
+  color: white;
+}
+
+.grid-template-columns-6 {
+  grid-template-columns: repeat(auto-fit, 26px);
+  grid-template-rows: repeat(auto-fit, 26px);
+}
+
+#next {
+  margin-top: 10px;
+  width: 150px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-family: "Syne Tactile";
+  cursor: pointer;
+  color: #4f302e;
+  transition: 0.2s;
+  background-color: #aa9373;
+}
+
+#next:hover {
+  background-color: white;
+}
